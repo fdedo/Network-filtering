@@ -26,22 +26,32 @@ The codes starting with ER are related to Erdos-Renyi network:
     it containes the function to generate an undirected ER net with randomly assigned weights to each link
 
 ------------------------------------------------------------------
-The other files are related to filters:
+There are three files related to filters:
+  disp_filter.m
+    containes the function that implement the disparity filter 
+  
+  hypergeometric_filter.m
+    containes the function that implement the hypergeometric filter
+  
+  polya_filter.m
+    containes the function that implement the polya filter
+  
+------------------------------------------------------------------
+An in the end there are files related to the comparison of filters:
   comparison_function.m
     containes the implementation of Jaccard similarity and salience 
   
   comparison_plot.m
-  
-  disp_filter.m
-  
-  hypergeometric_filter.m
-  
-  polya_filter.m
+    This file aims to plot measurement of the different performance of the
+    3 filters implemented in function of the multivariate significance level
   
   main_network_analysis.m
-  
-  randraw.m
-  
-  write_map.m 
+    This file can be used to quickly extract a backbone out of the desired network
+
+------------------------------------------------------------------
+randraw.m 
+  is an imported function that extract numbers out of particular distribution 
+  (used to extract from a power law distribution the weights of the synthetic networks)
+
 
 
